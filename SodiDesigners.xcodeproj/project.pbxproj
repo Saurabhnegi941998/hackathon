@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		605EE1A22EC739EA009856F5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 605EE1A12EC739EA009856F5 /* Kingfisher */; };
+		60DF8EDD2EC4D11F00E21E3C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 60DF8EDC2EC4D11F00E21E3C /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		60DF8E0F2EC4636700E21E3C /* SodiDesigners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodiDesigners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		60DF8EE42EC509FC00E21E3C /* Exceptions for "SodiDesigners" folder in "SodiDesigners" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Resources/Sodimac.imageset/Contents.json,
+				Resources/Sodimac.pdf,
+			);
+			target = 60DF8E0E2EC4636700E21E3C /* SodiDesigners */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60DF8E112EC4636700E21E3C /* SodiDesigners */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				60DF8EE42EC509FC00E21E3C /* Exceptions for "SodiDesigners" folder in "SodiDesigners" target */,
+			);
 			path = SodiDesigners;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605EE1A22EC739EA009856F5 /* Kingfisher in Frameworks */,
+				60DF8EDD2EC4D11F00E21E3C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF8E112EC4636700E21E3C /* SodiDesigners */,
+				60DF8EDB2EC4D11F00E21E3C /* Frameworks */,
 				60DF8E102EC4636700E21E3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +68,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		60DF8EDB2EC4D11F00E21E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -54,7 +84,7 @@
 			buildPhases = (
 				60DF8E0B2EC4636700E21E3C /* Sources */,
 				60DF8E0C2EC4636700E21E3C /* Frameworks */,
-				60DF8E0D2EC4636700E21E3C /* Resources */,
+				60DF8EE32EC509FC00E21E3C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -65,6 +95,8 @@
 			);
 			name = SodiDesigners;
 			packageProductDependencies = (
+				60DF8EDC2EC4D11F00E21E3C /* Alamofire */,
+				605EE1A12EC739EA009856F5 /* Kingfisher */,
 			);
 			productName = SodiDesigners;
 			productReference = 60DF8E0F2EC4636700E21E3C /* SodiDesigners.app */;
@@ -94,6 +126,10 @@
 			);
 			mainGroup = 60DF8E062EC4636700E21E3C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				60DF8ED62EC4D01900E21E3C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				605EE1A02EC739EA009856F5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 60DF8E102EC4636700E21E3C /* Products */;
 			projectDirPath = "";
@@ -105,7 +141,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		60DF8E0D2EC4636700E21E3C /* Resources */ = {
+		60DF8EE32EC509FC00E21E3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,16 +287,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8QLQNCC79J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SodiDesigners/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to let you take photos of your room.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to let you choose existing room photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires camera access to let you take photos of your room.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -279,16 +321,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8QLQNCC79J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SodiDesigners/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to let you take photos of your room.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires access to your photo library to let you choose existing room photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires camera access to let you take photos of your room.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		605EE1A02EC739EA009856F5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+		60DF8ED62EC4D01900E21E3C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		605EE1A12EC739EA009856F5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 605EE1A02EC739EA009856F5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		60DF8EDC2EC4D11F00E21E3C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60DF8ED62EC4D01900E21E3C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60DF8E072EC4636700E21E3C /* Project object */;
 }

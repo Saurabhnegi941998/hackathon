@@ -11,7 +11,7 @@ import SwiftUI
 struct SodiDesignersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           SodiDesignerView()
         }
     }
 }
