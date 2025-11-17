@@ -15,7 +15,7 @@ final class DesignUploadViewModel: ObservableObject {
     func submitDesign() async {
         guard let category = selectedCategory else { return }
         guard !selectedItems.isEmpty else {
-            responseMessage = "Please add at least one item to add."
+            responseMessage = "Please add at least one item to add"
             return
         }
 
